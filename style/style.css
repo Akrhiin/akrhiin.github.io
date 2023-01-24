@@ -64,6 +64,7 @@ html {
     overflow: hidden;
     background-color: black;
     background-image: url("https://i.imgur.com/AACsBE5.png");
+    background-repeat: no-repeat;
     background-size: 100%;
     color: white;
     font-family: arial;
