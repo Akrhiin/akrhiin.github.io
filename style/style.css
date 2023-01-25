@@ -84,22 +84,21 @@ a {
     color: white;
 }
 
-.name, .name a {
+#index_name {
     font-size: 87px;
     font-weight: bold;
     position: absolute;
     top: -25px;
     left: 180px;
 }
-
-.index_navbar {
+#index_navbar {
     display: flex;
     flex-flow: column nowrap;
     position: absolute;
     top: 82.3px;
     left: 180px;
 }
-.index_nav_block {
+#index_nav_block {
     display: flex;
     flex-flow: column nowrap;
 }
@@ -118,4 +117,8 @@ a {
 
 /* ================================================================ */
 
-
+#about_milk {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
