@@ -6,10 +6,38 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Michael Pace</title>
         <link rel="stylesheet" href="style/style.css">
-        <script rel="script/script.js"></script>
         <!-- <link rel="icon" href="media/favicon.ico" type="image/x-icon"> -->
     </head>
     <body>
+        <script src="script/three.js"></script>
+        <script>
+            // CAMERA
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.body.appendChild( renderer.domElement );
+
+            // TEST CUBE
+            const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+            const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+            const cube = new THREE.Mesh( geometry, material );
+            scene.add( cube );
+
+            camera.position.z = 5;
+
+            // RENDER
+            function animate() 
+            {
+                requestAnimationFrame( animate );
+                cube.rotation.x += 0.01;
+                cube.rotation.y += 0.01;
+                renderer.render( scene, camera );
+            }
+            animate();
+
+        </script>
         <header>
             <h1 class="name"><a href="index.html">MICHAEL PACE</a></h1>
             <nav class="navbar">
@@ -21,6 +49,8 @@
             </nav>
         </header>
         <main>
+            <section>
+            </section>
         </main>
     </body>
 </html>
