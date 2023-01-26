@@ -103,12 +103,29 @@ a {
     flex-flow: column nowrap;
 }
 .index_nav_link {
+    padding-bottom: 30px;
     font-size: 40px;
     font-weight: bold;
-    padding-bottom: 30px;
 }
 .index_nav_link:hover {
     font-size: 41px;
+}
+
+/* ================================================================ */
+
+/* CUBE */
+
+/* ================================================================ */
+
+#cube_back a{
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    font-size: 81px;
+    font-weight: bold;
+}
+#cube_back a:hover {
+    font-size: 82px;
 }
 
 /* ================================================================ */

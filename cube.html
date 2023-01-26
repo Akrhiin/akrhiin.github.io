@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Michael Pace</title>
+        <link rel="stylesheet" href="style/style.css">
+        <!-- <link rel="icon" href="media/favicon.ico" type="image/x-icon"> -->
+    </head>
+    <body>
+        <script src="script/three.js"></script>
+        <script>
+            const bg_texture = new THREE.TextureLoader().load("https://imgur.com/oVj9UBp");
+            const scene = new THREE.Scene();
+            scene.background = bg_texture;
+			const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+			const renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+
+			const geometry = new THREE.BoxGeometry(1.5, 1.5, 1.5);
+            const material = new THREE.MeshBasicMaterial({color: 0xffffff});
+			const cube = new THREE.Mesh(geometry, material);
+			scene.add(cube);
+
+			camera.position.z = 5;
+
+			function animate() 
+            {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+        </script>
+    </body>
+    <main>
+        <section id="cube_back">
+            <a href="index.html">BACK</a>
+        </section>
+    </main>
+</html>

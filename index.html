@@ -9,43 +9,14 @@
         <!-- <link rel="icon" href="media/favicon.ico" type="image/x-icon"> -->
     </head>
     <body>
-        <script src="script/three.js"></script>
-        <script>
-            const texture = new THREE.TextureLoader().load("https://i.imgur.com/AACsBE5.png");
-            const scene = new THREE.Scene();
-            scene.background = texture;
-			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-			const renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
-
-			const geometry = new THREE.BoxGeometry( 1.3, 1.3, 1.3 );
-			const material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
-			const cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
-
-			camera.position.z = 5;
-
-			function animate() 
-            {
-				requestAnimationFrame( animate );
-
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
-
-				renderer.render( scene, camera );
-			};
-
-			animate();
-        </script>
         <header>
             <h1 id="index_name">MICHAEL PACE</h1>
             <nav id="index_navbar">
                 <ul id="index_nav_block">
-                    <a class="index_nav_link">ABOUT</a>
-                    <a class="index_nav_link">PROJECTS</a>
-                    <a class="index_nav_link">CONTACT</a>
+                    <li class="index_nav_link"><a>ABOUT</a></li>
+                    <li class="index_nav_link"><a>PROJECTS</a></li>
+                    <li class="index_nav_link"><a>CONTACT</a></li>
+                    <li class="index_nav_link"><a href="cube.html">CUBE</a></li>
                 </ul>
             </nav>
         </header>
