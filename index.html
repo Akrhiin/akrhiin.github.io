@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="index_html">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,22 @@
         <!-- <link rel="icon" href="media/favicon.ico" type="image/x-icon"> -->
     </head>
     <body>
+        <script>
+            // CURSOR CIRCLE
+            var offX = 15;          // X offset from mouse position
+            var offY = 15;          // Y offset from mouse position
+
+            function mouseX(evt) {if (!evt) evt = window.event; if (evt.pageX) return evt.pageX; else if (evt.clientX)return evt.clientX + (document.documentElement.scrollLeft ?  document.documentElement.scrollLeft : document.body.scrollLeft); else return 0;}
+            function mouseY(evt) {if (!evt) evt = window.event; if (evt.pageY) return evt.pageY; else if (evt.clientY)return evt.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop); else return 0;}
+
+            function follow(evt) 
+            {
+                var obj = document.getElementById('circle').style;
+                obj.left = (parseInt(mouseX(evt))+offX) + 'px';
+                obj.top = (parseInt(mouseY(evt))+offY) + 'px'; 
+            }
+            document.onmousemove = follow;
+        </script>
         <header>
             <h1 id="index_name">MICHAEL PACE</h1>
             <nav id="index_navbar">
@@ -16,11 +32,11 @@
                     <li class="index_nav_link"><a>ABOUT</a></li>
                     <li class="index_nav_link"><a>PROJECTS</a></li>
                     <li class="index_nav_link"><a>CONTACT</a></li>
-                    <li class="index_nav_link"><a href="cube.html">CUBE</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <section id="circle" style="cursor:none;"></section>
         </main>
     </body>
 </html>

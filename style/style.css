@@ -65,18 +65,32 @@ html {
     font-family: arial;
 }
 
+#circle {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    background: #ffffff;
+    pointer-events: none;
+}
+
 /* ================================================================ */
 
 /* INDEX */
 
 /* ================================================================ */
 
-html {
+#index_html {
     background-color: black;
     background-image: url("https://i.imgur.com/AACsBE5.png");
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
+    cursor: none;
 }
 
 a {
@@ -106,9 +120,14 @@ a {
     padding-bottom: 30px;
     font-size: 40px;
     font-weight: bold;
+    cursor: none;
 }
 .index_nav_link:hover {
     font-size: 41px;
+}
+
+.index_nav_link a {
+    cursor: none;
 }
 
 /* ================================================================ */
@@ -117,12 +136,22 @@ a {
 
 /* ================================================================ */
 
+#cube_html {
+    background-color: black;
+    background-image: url("https://i.imgur.com/AACsBE5.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    cursor: none;
+}
+
 #cube_back a{
     position: absolute;
     top: 20px;
     left: 180px;
     font-size: 81px;
     font-weight: bold;
+    cursor: none;
 }
 #cube_back a:hover {
     font-size: 82px;
