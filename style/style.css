@@ -124,6 +124,7 @@ a {
 }
 .index_nav_link:hover {
     font-size: 41px;
+    pointer-events: auto;
 }
 
 .index_nav_link a {
