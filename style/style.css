@@ -68,10 +68,10 @@ html {
 #circle {
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    height: 60px;
-    width: 60px;
+    top: -10%;
+    left: -10%;
+    height: 4em;
+    width: 4em;
     border-radius: 50%;
     mix-blend-mode: difference;
     background: #ffffff;
@@ -140,6 +140,17 @@ a {
     cursor: none;
 }
 
+#index_qr {
+    width: 10%;
+    transform: translate(-2.5%,0%);
+    cursor: none;
+}
+
+#index_qr:hover {
+    width: 10.4%;
+    cursor: none;
+}
+
 /* ================================================================ */
 
 /* CUBE */
@@ -178,3 +189,11 @@ a {
     top: 0;
     left: 0;
 }
+
+/* ================================================================ */
+
+/* PROJECTS */
+
+/* ================================================================ */
+
+
