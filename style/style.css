@@ -63,19 +63,34 @@ html {
     height: 100%;
     overflow: hidden;
     font-family: arial;
+    z-index: 0;
+}
+
+nav {
+    z-index: 98;
 }
 
 #circle {
     position: absolute;
-    transform: translate(-50%,-50%);
-    top: -10%;
-    left: -10%;
-    height: 4em;
-    width: 4em;
-    border-radius: 50%;
+    width: 8em;
+    display: block;
+    transform: translate(-61%,-60%);
     mix-blend-mode: difference;
-    background: #ffffff;
     pointer-events: none;
+    z-index: 99;
+}
+#circle img {
+    width: 8em;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 .wip_message {
@@ -133,7 +148,7 @@ a {
 }
 .index_nav_link:hover {
     font-size: 41px;
-    pointer-events: auto;
+    cursor: none;
 }
 
 .index_nav_link a {
@@ -143,11 +158,6 @@ a {
 #index_qr {
     width: 10%;
     transform: translate(-2.5%,0%);
-    cursor: none;
-}
-
-#index_qr:hover {
-    width: 10.4%;
     cursor: none;
 }
 
