@@ -113,7 +113,7 @@ nav {
     background-image: url("https://i.imgur.com/AACsBE5.png");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     color: white;
     cursor: none;
 }
@@ -159,13 +159,28 @@ nav {
     cursor: none;
 }
 
-#index_love {
+#index_japanese {
     position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    left: -9.5%;
+    top: 29.5%;
     transform: rotate(90deg);
-    font-family: verdana;
+    font-size: 2em;
     font-weight: bold;
+}
+@keyframes japan-enter {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 29.5%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    #index_japanese {
+        animation-name: japan-enter;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
 }
 
 /* ================================================================ */
@@ -178,7 +193,7 @@ nav {
     background-color: black;
     background-image: url("https://i.imgur.com/AACsBE5.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: white;
     cursor: none;
 }
@@ -225,7 +240,7 @@ nav {
     background-image: url("https://i.imgur.com/AACsBE5.png");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     color: white;
     cursor: none;
 }
