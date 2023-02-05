@@ -111,13 +111,14 @@ nav {
 #index_html {
     background-color: black;
     background-image: url("https://i.imgur.com/AACsBE5.png");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: fill;
     color: white;
     cursor: none;
 }
 
-a {
+#index_html a {
     text-decoration: none;
     color: white;
 }
@@ -125,23 +126,20 @@ a {
 #index_name {
     font-size: 87px;
     font-weight: bold;
-    position: absolute;
-    top: -25px;
-    left: 180px;
+    padding-bottom: 3%;
 }
 #index_navbar {
-    display: flex;
-    flex-flow: column nowrap;
+    display: block;
     position: absolute;
-    top: 82.3px;
+    top: -3%;
     left: 180px;
 }
 #index_nav_block {
-    display: flex;
-    flex-flow: column nowrap;
+    display: block;
 }
 .index_nav_link {
-    padding-bottom: 30px;
+    width: 10%;
+    padding-bottom: 4%;
     font-size: 40px;
     font-weight: bold;
     cursor: none;
@@ -156,9 +154,18 @@ a {
 }
 
 #index_qr {
-    width: 10%;
+    max-width: 9em;
     transform: translate(-2.5%,0%);
     cursor: none;
+}
+
+#index_love {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transform: rotate(90deg);
+    font-family: verdana;
+    font-weight: bold;
 }
 
 /* ================================================================ */
@@ -207,3 +214,23 @@ a {
 /* ================================================================ */
 
 
+/* ================================================================ */
+
+/* CONTACT */
+
+/* ================================================================ */
+
+#contact_html {
+    background-color: black;
+    background-image: url("https://i.imgur.com/AACsBE5.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    color: white;
+    cursor: none;
+}
+
+#contact_html a {
+    text-decoration: none;
+    color: white;
+}
