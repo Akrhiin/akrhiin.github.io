@@ -12,9 +12,6 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js'></script>
         <script src='https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
         <script type="text/javascript">
-            // THREE JS
-
-
             // CURSOR CIRCLE
             var offX = 15;          // X offset from mouse position
             var offY = 15;          // Y offset from mouse position
@@ -29,6 +26,20 @@
                 obj.top = (parseInt(mouseY(evt))+offY) + 'px'; 
             }
             document.onmousemove = follow;
+
+            // LIGHT / DARK MODE
+            function toggleLight()
+            {
+                var x = document.getElementById("mode-filter");
+                if (x.style.display === "none")
+                {
+                    x.style.display = "block";
+                }
+                else
+                {
+                    x.style.display = "none";
+                }
+            }
         </script>
         <header>
             <h2 id="index_japanese">あなたはこれを読むことができますか？</h2>
@@ -40,13 +51,14 @@
                     <li class="index_nav_link"><a href="contact.html">CONTACT</a></li>
                 </ul>
                 <img id="index_qr" src="media/index/github_qr.png"/>
+                <img id="mode-button" src="media/toggle_light.png" onclick="toggleLight()"/>
             </nav>
         </header>
         <main>
-            </section>
             <section id="circle">
                 <img src="media/circle.png" style="cursor:none;"/>
             </section>
         </main>
+        <section id="mode-filter"></section>
     </body>
 </html>
