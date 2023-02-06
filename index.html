@@ -31,13 +31,13 @@
             function toggleLight()
             {
                 var x = document.getElementById("mode-filter");
-                if (x.style.display === "none")
+                if (x.style.display === "block")
                 {
-                    x.style.display = "block";
+                    x.style.display = "none";
                 }
                 else
                 {
-                    x.style.display = "none";
+                    x.style.display = "block";
                 }
             }
         </script>
@@ -59,6 +59,6 @@
                 <img src="media/circle.png" style="cursor:none;"/>
             </section>
         </main>
-        <section id="mode-filter"></section>
+        <section id="mode-filter" style="display: none;"></section>
     </body>
 </html>
