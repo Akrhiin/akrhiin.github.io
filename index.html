@@ -11,7 +11,7 @@
     <body>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js'></script>
         <script src='https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
-        <script type="text/javascript">
+        <script>
             // CURSOR CIRCLE
             var offX = 15;          // X offset from mouse position
             var offY = 15;          // Y offset from mouse position
@@ -42,21 +42,23 @@
             }
         </script>
         <header>
-            <h2 id="index_japanese">あなたはこれを読むことができますか？</h2>
-            <nav id="index_navbar">
-                <h1 id="index_name">MICHAEL PACE</h1>
-                <ul id="index_nav_block">
-                    <li class="index_nav_link"><a href="about.html">ABOUT</a></li>
-                    <li class="index_nav_link"><a href="projects.html">PROJECTS</a></li>
-                    <li class="index_nav_link"><a href="contact.html">CONTACT</a></li>
-                </ul>
-                <img id="index_qr" src="media/index/github_qr.png"/>
-                <img id="mode-button" src="media/toggle_light.png" onclick="toggleLight()"/>
-            </nav>
+            <section id="index-content-block">
+                <h2 id="index_japanese">あなたはこれを読むことができますか？</h2>
+                <nav id="index_navbar">
+                    <h1 id="index_name">MICHAEL PACE</h1>
+                    <ul id="index_nav_block">
+                        <li class="index_nav_link"><a href="about.html">ABOUT</a></li>
+                        <li class="index_nav_link"><a href="projects.html">PROJECTS</a></li>
+                        <li class="index_nav_link"><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    <img id="index_qr" alt="QR Code to GitHub Account" src="media/index/github_qr.png">
+                    <img id="mode-button" alt="Toggle Dark Mode Button" src="media/toggle_light.png" onclick="toggleLight()">
+                </nav>
+            </section>
         </header>
         <main>
             <section id="circle">
-                <img src="media/circle.png" style="cursor:none;"/>
+                <img src="media/circle.png" alt="" style="cursor:none;"/>
             </section>
         </main>
         <section id="mode-filter" style="display: none;"></section>
