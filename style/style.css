@@ -134,7 +134,7 @@ nav {
     #header-block {
         padding-left: 20%;
         max-width: 80%;
-        transform: translate(-1%,-0.6%);
+        transform: translate(-1.5%,-3%);
     }
 
     #name {
@@ -181,6 +181,16 @@ nav {
 
     /* ------------------------------------------------------------ */
 
+    #header-block {
+        transform: translate(-6.8%,-5%);
+    }
+
+    #qr {
+        max-width: 40%;
+    }
+
+    #mode-button {
+        max-width: 40%; }
 }
 
 /* ================================================================ */
@@ -203,7 +213,7 @@ nav {
 
 
     #header-block {
-        transform: translate(-8%,-2.5%);
+        transform: translate(-8%,-4%);
     }
 
     #name {
