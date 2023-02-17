@@ -1,5 +1,4 @@
 /* ================================================================ */
-/* ================================================================ */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -52,35 +51,37 @@ table {
 }
 
 /* ================================================================ */
-/* ================================================================ */
 
 /* GENERAL FORMATTING */
 
 /* ================================================================ */
 
 html {
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: black;
+    background-image: url("https://i.imgur.com/AACsBE5.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     font-family: arial;
+    font-weight: bold;
+    color: white;
     z-index: 0;
 }
+html a {
+        text-decoration: none;
+        color: white;
+    }
 
 nav {
     z-index: 98;
 }
 
-#circle {
-    position: absolute;
-    width: 8em;
-    display: block;
-    transform: translate(-61%,-60%);
-    mix-blend-mode: difference;
-    pointer-events: none;
-    z-index: 99;
-}
 #circle img {
-    width: 8em;
+    width: 100%;
     animation: rotation 8s infinite linear;
 }
 
@@ -93,19 +94,12 @@ nav {
     }
 }
 
-.wip_message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 87px;
-    font-weight: bold;
-}
-
 #mode-filter {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0%;
+    left: 0%;
     display: none;
     background-color: white;
     mix-blend-mode: difference;
@@ -115,161 +109,188 @@ nav {
 
 /* ================================================================ */
 
-/* INDEX */
+/* 320px - Mobile ==> 1 */
 
 /* ================================================================ */
 
-#index_html {
-    background-color: black;
-    background-image: url("https://i.imgur.com/AACsBE5.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    cursor: none;
-}
+@media only screen and (min-width: 320px) {
+     /* ------------------------------------------------------------ */
 
-#index_html a {
-    text-decoration: none;
-    color: white;
-}
-
-#index_name {
-    font-size: 87px;
-    font-weight: bold;
-    padding-bottom: 3%;
-}
-#index_navbar {
-    display: block;
-    position: absolute;
-    top: -3%;
-    left: 180px;
-}
-#index_nav_block {
-    display: block;
-}
-.index_nav_link {
-    width: 10%;
-    padding-bottom: 4%;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: none;
-}
-.index_nav_link:hover {
-    font-size: 41px;
-    cursor: none;
-}
-
-.index_nav_link a {
-    cursor: none;
-}
-
-#index_qr {
-    max-width: 9em;
-    transform: translate(-2.5%,0%);
-    cursor: none;
-}
-
-#index_japanese {
-    position: absolute;
-    left: -9.5%;
-    top: 29.5%;
-    transform: rotate(90deg);
-    font-size: 2em;
-    font-weight: bold;
-}
-@keyframes japan-enter {
-    0% {
-        top: -50%;
+    .tablet, .landscape, .desktop {
+        display: none;
     }
-    100% {
-        top: 29.5%;
+    .mobile {
+        display: block;
     }
-}
-@media (prefers-reduced-motion: no-preference) {
-    #index_japanese {
-        animation-name: japan-enter;
-        animation-duration: 1.5s;
-        animation-iteration-count: 1;
+
+    /* ------------------------------------------------------------ */
+   
+    #japanese {
+        position: absolute;
+        max-width: 45%;
+        transform: translate(-60%,-6.1%);
+    }
+
+    #header-block {
+        padding-left: 20%;
+        max-width: 80%;
+        transform: translate(-1%,-0.6%);
+    }
+
+    #name {
+        font-size: 16.5vw;
+        padding-bottom: 1%;
+    }
+
+    .nav-link {
+        font-size: 8.5vw;
+        padding-bottom: 1%;
+    }
+    .nav-link a {
+        cursor: none;
+    }
+    .nav-link:hover {
+        font-size: 8.6vw;
+    }
+
+    #qr {
+        max-width: 60%;
+        transform: translate(-4%,0%);
+    }
+    
+    #mode-button {
+        max-width: 55%;
     }
 }
 
-#mode-button {
-    top: 10%;
-    display: block;
-    border-radius: 50%;
-    margin-left: 1.5%;
-    margin-top: 1%;
-    max-width: 7em;
-    z-index: 99;
-}
-#mode-button:hover {
-    max-width: 7.4em;
-}
+/* ================================================================ */
+
+/* 480px - Tablet ==> 2 */
 
 /* ================================================================ */
 
-/* CUBE */
+@media only screen and (min-width: 480px) {
+    /* ------------------------------------------------------------ */
 
-/* ================================================================ */
+    .mobile, .landscape, .desktop {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
 
-#cube_html {
-    background-color: black;
-    background-image: url("https://i.imgur.com/AACsBE5.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    cursor: none;
-}
+    /* ------------------------------------------------------------ */
 
-#cube_back a{
-    position: absolute;
-    top: 20px;
-    left: 180px;
-    font-size: 81px;
-    font-weight: bold;
-    cursor: none;
-}
-#cube_back a:hover {
-    font-size: 82px;
 }
 
 /* ================================================================ */
 
-/* ABOUT */
+/* 768px - Large Tablet / Landscape Mobile ==> 3 */
 
 /* ================================================================ */
 
-#about_milk {
-    position: fixed;
-    top: 0;
-    left: 0;
+@media only screen and (min-width: 768px) {
+    /* ------------------------------------------------------------ */
+
+    .mobile, .tablet, .desktop {
+        display: none;
+    }
+    .landscape {
+        display: block;
+    }
+
+    /* ------------------------------------------------------------ */
+
+
+    #header-block {
+        transform: translate(-8%,-2.5%);
+    }
+
+    #name {
+        font-size: 5.3em;
+    }
+
+    #qr {
+        max-width: 40%;
+    }
+
+    #mode-button {
+        max-width: 25%;
+        transform: translate(0%,-5%);
+    }
 }
 
 /* ================================================================ */
 
-/* PROJECTS */
+/* 1024px - Desktop ==> 4 */
 
 /* ================================================================ */
 
+@media only screen and (min-width: 1024px) {
+    /* ------------------------------------------------------------ */
 
-/* ================================================================ */
+    .mobile, .tablet, .landscape {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
 
-/* CONTACT */
+    /* ------------------------------------------------------------ */
 
-/* ================================================================ */
+    html {
+        cursor: none;
+    }
 
-#contact_html {
-    background-color: black;
-    background-image: url("https://i.imgur.com/AACsBE5.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    cursor: none;
-}
+    #circle {
+        position: absolute;
+        width: 8%;
+        display: block;
+        transform: translate(-61%,-60%);
+        mix-blend-mode: difference;
+        pointer-events: none;
+        z-index: 99;
+    }
 
-#contact_html a {
-    text-decoration: none;
-    color: white;
+    /* ------------------------------------------------------------ */
+
+    /* INDEX */
+
+    /* ------------------------------------------------------------ */
+
+    #japanese {
+        max-width: 10%;
+        transform: translate(-5%,-6%);
+    }
+
+    #header-block {
+        max-width: 45%;
+        transform: translate(-15%,-6.5%);
+    }
+
+    #name {
+        font-size: 5.5vw;
+        padding-bottom: 0.2%;
+    }
+
+    .nav-link {
+        font-size: 2.5vw;
+        padding-bottom: 0.5%;
+    }
+    .nav-link a {
+        cursor: none;
+    }
+    .nav-link:hover {
+        font-size: 2.55vw;
+    }
+
+    #qr {
+        max-width: 20%;
+        transform: translate(-5%,0%);
+    }
+    
+    #mode-button {
+        max-width: 20%;
+    }
+
 }
