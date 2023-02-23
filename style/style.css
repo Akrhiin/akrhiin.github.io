@@ -105,6 +105,14 @@ nav {
     pointer-events: none;
 }
 
+#threejs-skull {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
 /* ================================================================ */
 
 /* 320px - Mobile ==> 1 */
@@ -273,7 +281,22 @@ nav {
     #japanese {
         max-width: 10%;
         transform: translate(-5%,-6%);
+        animation: japanese-in 1s both;
     }
+    @keyframes japanese-in {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateX(auto);
+        }
+    }
+
+    /* ------------------------------------------------------------ */
+
+    /* OTHER PAGES */
+
+    /* ------------------------------------------------------------ */
 
     #header-block {
         max-width: 45%;
