@@ -132,6 +132,7 @@ nav {
     left: 0%;
     pointer-events: none;
     filter: saturate(200%);
+    z-index: 1;
 }
 
 #mode-filter {
