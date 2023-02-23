@@ -182,23 +182,18 @@ nav {
     .nav-link:hover {
         font-size: 8.6vw;
     }
-
-    #qr {
-        max-width: 60%;
-        transform: translate(-4%,0%);
-    }
     
     #mode-button {
         max-width: 55%;
-        transform: translate(8%,0%);
+        transform: translate(8%,8%);
     }
     #mode-button-one {
-        width: 35vw;
-        height: 35.2vw;
+        width: 34vw;
+        height: 33.2vw;
     }
     #mode-button-two {
-        width: 34.8vw;
-        height: 35.4vw;
+        width: 32.7vw;
+        height: 34.2vw;
     }
 }
 
@@ -222,10 +217,6 @@ nav {
 
     #header-block {
         transform: translate(-2%,-4%);
-    }
-
-    #qr {
-        max-width: 40%;
     }
 
     #mode-button {
@@ -274,10 +265,6 @@ nav {
         max-width: 80%;
     }
 
-    #qr {
-        max-width: 40%;
-    }
-
     #mode-button {
         padding-top: 3.5%;
         max-width: 36%;
@@ -285,7 +272,7 @@ nav {
     }
     #mode-button-one {
         width: 20vw;
-        height: 20.2vw;
+        height: 21.2vw;
     }
     #mode-button-two {
         width: 19.8vw;
@@ -372,11 +359,6 @@ nav {
         font-size: 3.9vw;
     }
 
-    #qr {
-        max-width: 30%;
-        transform: translate(-5%,0%);
-    }
-    
     #mode-button {
         max-width: 32%;
         transform: translate(8%,0%);
