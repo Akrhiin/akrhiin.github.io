@@ -92,7 +92,7 @@
         </script>
         <script>
             // LIGHT / DARK MODE
-            toggleLight = function()
+            function toggleLight()
             {
                 var x = document.getElementById("mode-filter");
                 if (x.style.display === "block")
@@ -115,7 +115,7 @@
                         <li class="nav-link"><a href="">PROJECTS</a></li>
                         <li class="nav-link"><a href="">CONTACT</a></li>
                     </ul>
-                    <section id="mode-button" onclick="toggleLight">
+                    <section id="mode-button" onclick="toggleLight()">
                         <canvas id="mode-button-one"></canvas>
                         <canvas id="mode-button-two"></canvas>
                     </section>
