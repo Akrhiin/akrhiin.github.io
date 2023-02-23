@@ -77,7 +77,7 @@
                         camera.aspect = width / height;
                         camera.updateProjectionMatrix();
                         renderer.setSize(width, height);
-                        setCanvasDimensions(canvas, width, height);
+                        setCanvasDimensions(renderer, width, height);
                     },
                     resizeUpdateInterval,
                     { trailing: true }
@@ -115,22 +115,21 @@
             }
         </script>
         <header>
-
-            <section id="header-block">
+            <nav id="navbar">
                 <img id="japanese" src="media/whoareyou.png" alt="あなたはこれを読むことができますか？">
-                <nav id="navbar">
-                    <h1 id="name">MICHAEL PACE</h1>
-                    <ul id="nav-block">
+                <section id="nav-text">
+                    <h1 id="nav-name">MICHAEL PACE</h1>
+                    <ul id="nav-links">
                         <li class="nav-link"><a href="">ABOUT</a></li>
                         <li class="nav-link"><a href="">PROJECTS</a></li>
                         <li class="nav-link"><a href="">CONTACT</a></li>
                     </ul>
-                    <section id="mode-button" onclick="toggleLight()">
-                        <canvas id="mode-button-one"></canvas>
-                        <canvas id="mode-button-two"></canvas>
-                    </section>
-                </nav>
-            </section>
+                </section>
+                <section id="mode-button" onclick="toggleLight()">
+                    <canvas id="mode-button-one"></canvas>
+                    <canvas id="mode-button-two"></canvas>
+                </section>
+            </nav>
         </header>
         <main>
             <canvas id="threejs"></canvas>
