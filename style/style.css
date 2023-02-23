@@ -57,6 +57,7 @@ table {
 /* ================================================================ */
 
 html {
+    position: fixed;
     height: 100%;
     width: auto;
     background-color: black;
