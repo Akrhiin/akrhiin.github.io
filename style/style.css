@@ -75,6 +75,14 @@ html a {
     color: white;
 }
 
+#header-block {
+    display: grid;
+}
+
+#navbar {
+    transform: translateX(12%);
+}
+
 nav {
     z-index: 98;
 }
@@ -134,6 +142,7 @@ nav {
     pointer-events: none;
     filter: saturate(200%);
     z-index: 1;
+    cursor: none;
 }
 
 #mode-filter {
@@ -167,16 +176,20 @@ nav {
 
     /* ------------------------------------------------------------ */
    
-    #japanese {
-        position: absolute;
-        max-width: 45%;
-        transform: translate(-60%,-6.1%);
-    }
-
     #header-block {
         padding-left: 20%;
         max-width: 80%;
         transform: translate(-1.5%,-3%);
+    }
+
+    #japanese {
+        position: fixed;
+        max-width: 45%;
+        transform: translate(-55%,-6.1%);
+    }
+
+    #navbar {
+        transform: translateX(1.5%);
     }
 
     #name {
@@ -263,6 +276,13 @@ nav {
 
     /* ------------------------------------------------------------ */
 
+    #japanese {
+        transform: translate(-40%,-6%);
+    }
+
+    #navbar {
+        transform: translateX(2%);
+    }
 
     #header-block {
         transform: translate(-8%,-4%);
@@ -311,7 +331,7 @@ nav {
 
     #circle {
         position: absolute;
-        width: 8%;
+        width: 18%;
         display: block;
         transform: translate(-61%,-60%);
         mix-blend-mode: difference;
@@ -326,8 +346,8 @@ nav {
     /* ------------------------------------------------------------ */
 
     #japanese {
-        max-width: 10%;
-        transform: translate(-5%,-6%);
+        max-width: 50%;
+        transform: translate(-55%,-3.5%);
         animation: japanese-in 1s both;
     }
     @keyframes japanese-in {
@@ -335,19 +355,17 @@ nav {
             transform: translateY(-100%);
         }
         100% {
-            transform: translateX(auto);
+            transform: translateY(-3.5%);
         }
     }
-
-    /* ------------------------------------------------------------ */
-
-    /* OTHER PAGES */
-
-    /* ------------------------------------------------------------ */
 
     #header-block {
         max-width: 45%;
         transform: translate(-15%,-6.5%);
+    }
+
+    #navbar {
+        transform: translateX(22.5%);
     }
 
     #name {
