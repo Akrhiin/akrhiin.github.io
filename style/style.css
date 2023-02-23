@@ -70,9 +70,9 @@ html {
     z-index: 0;
 }
 html a {
-        text-decoration: none;
-        color: white;
-    }
+    text-decoration: none;
+    color: white;
+}
 
 nav {
     z-index: 98;
@@ -113,7 +113,7 @@ nav {
     background-color: white;
     border-radius: 50%;
     position: relative;
-    animation: mode-button-spin 4s linear infinite reverse;
+    animation: mode-button-spin 4.4s linear infinite reverse;
 }
 @keyframes mode-button-spin {
     0% {
@@ -122,6 +122,16 @@ nav {
     100% {
         transform: rotate(360deg);
     }
+}
+
+#threejs {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+    filter: saturate(200%);
 }
 
 #mode-filter {
@@ -133,7 +143,7 @@ nav {
     display: none;
     background-color: white;
     mix-blend-mode: difference;
-    z-index: 99;
+    z-index: 100;
     pointer-events: none;
 }
 
@@ -258,11 +268,6 @@ nav {
 
     #name {
         font-size: 5.3em;
-    }
-
-    #navbar-images {
-        display: grid;
-        max-width: 80%;
     }
 
     #mode-button {
