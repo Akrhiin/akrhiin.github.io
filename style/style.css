@@ -379,6 +379,7 @@ nav {
     
     #mode-button {
         max-width: 32%;
+        transform: translate(13%,0%);
     }
     #mode-button-one {
         width: 8vw;
