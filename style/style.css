@@ -55,6 +55,9 @@ table {
 /* GENERAL FORMATTING */
 
 /* ================================================================ */
+.mobile, .tablet, .landscape, .desktop {
+    display: none;
+}
 
 html {
     height: 100%;
@@ -78,6 +81,25 @@ nav {
     z-index: 98;
 }
 
+#japanese {
+    display: none;
+}
+
+#navbar {
+    padding-top: 2%;
+    padding-left: 3%;
+    width: 80%;
+}
+#nav-name {
+    font-size: 20vw;
+    padding-bottom: 1%;
+}
+.nav-link {
+    font-size: 15vw;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
 #circle img {
     width: 100%;
     animation: rotation 8s infinite linear;
@@ -96,6 +118,7 @@ nav {
     z-index: 98;
 }
 #mode-button-one, #mode-button-two {
+    display: none;
     grid-column: 1;
     grid-row: 1;
 }
@@ -125,6 +148,7 @@ nav {
 }
 
 #threejs {
+    display: none;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -167,8 +191,10 @@ nav {
 
     #navbar {
         display: grid;
+        padding: 0;
     }
     #japanese {
+        display: block;
         grid-row: 1;
         grid-column: 1;
         max-width: 120%;
@@ -198,7 +224,10 @@ nav {
     
     #mode-button {
         max-width: 55%;
-        transform: translate(100%, -308%);
+        transform: translate(100%, -280%);
+    }
+    #mode-button-one, #mode-button-two {
+        display: block;
     }
     #mode-button-one {
         width: 34vw;
@@ -207,6 +236,10 @@ nav {
     #mode-button-two {
         width: 32.7vw;
         height: 34.2vw;
+    }
+
+    #threejs {
+        display: block;
     }
 }
 
@@ -232,7 +265,7 @@ nav {
 
     #mode-button {
         max-width: 40%; 
-        transform: translate(155%,-272%);
+        transform: translate(155%,-250%);
     }
     #mode-button-one {
         width: 30vw;
@@ -260,6 +293,9 @@ nav {
     }
     /* ------------------------------------------------------------ */
 
+    #japanese {
+        max-width: 150%;
+    }
     #nav-text {
         transform: translate(-12%, -4%);
     }
@@ -267,7 +303,7 @@ nav {
     #mode-button {
         padding-top: 3.5%;
         max-width: 36%;
-        transform: translate(165%,-240%);
+        transform: translate(170%,-240%);
     }
     #mode-button-one {
         width: 20vw;
@@ -314,7 +350,7 @@ nav {
     /* ------------------------------------------------------------ */
 
     #japanese {
-        max-width: 65%;
+        max-width: 90%;
         animation: japanese-in 1s both;
     }
     @keyframes japanese-in {
@@ -327,15 +363,16 @@ nav {
     }
 
     #nav-text {
-        transform: translate(-8.2%, -5%);
+        transform: translate(-0%, -5%);
     }
     #nav-name {
-        font-size: 10vw;
+        font-size: 9vw;
+        margin-bottom: -2.5%;
     }
     .nav-link {
         font-size: 5vw;
         padding-left: 0.8%;
-        padding-bottom: 0.5%;
+        margin-bottom: -2%;
     }
     .nav-link a {
         cursor: none;
@@ -346,7 +383,7 @@ nav {
 
     #mode-button {
         max-width: 32%;
-        transform: translate(220%,-285%);
+        transform: translate(330%,-155%);
     }
     #mode-button-one {
         width: 9vw;
