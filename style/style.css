@@ -106,7 +106,6 @@ nav {
     border-radius: 50%;
     position: relative;
     animation: mode-button-spin 4s linear infinite;
-    mix-blend-mode: difference;
 }
 #mode-button-two {
     width: 7.8vw;
@@ -115,7 +114,6 @@ nav {
     border-radius: 50%;
     position: relative;
     animation: mode-button-spin 4.4s linear infinite reverse;
-    mix-blend-mode: difference;
 }
 @keyframes mode-button-spin {
     0% {
