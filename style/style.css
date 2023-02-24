@@ -93,6 +93,7 @@ nav {
 
 #mode-button {
     display: grid;
+    z-index: 98;
 }
 #mode-button-one, #mode-button-two {
     grid-column: 1;
