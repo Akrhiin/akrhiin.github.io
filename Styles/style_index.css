@@ -1,0 +1,35 @@
+/* file: style_index.css
+ * author: Michael Pace
+ * created: 07.21.2025
+ * updated: 07.22.2025
+ */
+
+@import "style_main.css";
+/*
+ *  --color-ivory: #FEFFEA;
+ *  --color-night: #151515;
+ *  --color-orange-web: #F3A712;
+ *  --color-hunter-green: #386641;
+ *  --color-chili-red: #d84727; 
+ *
+ *  --main-bg-color: var(--color-ivory);
+ *  --main-content-color: var(--color-night);
+ *  --text-content-color: var(--color-ivory);
+ *  --main-banner-color: var(--color-night);
+ *  --text-banner-color: var(--color-ivory);
+ */
+
+
+#index-content {
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+#headshot {
+    width: 17rem;
+    height: 17rem;
+    object-fit: cover;
+    margin: 2rem auto 2rem auto;
+    border-radius: 0.1rem;
+}
+

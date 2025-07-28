@@ -1,0 +1,26 @@
+/* file: style_projects.css
+ * author: Michael pace
+ * created: 07.21.2025
+ * updated: 07.21.2025
+ */
+
+@import "style_main.css";
+
+#projects-title {
+    background-color: var(--main-banner-color);
+    color: var(--text-banner-color);
+    padding: 0.5rem;
+    margin-left: 25%;
+    margin-bottom: 1rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.github-card {
+    padding: 0 1rem 1rem 1rem;
+    border-top: 0.15rem solid var(--text-content-color);
+}
+.github-card h3 {
+    margin-bottom: 1rem;
+}

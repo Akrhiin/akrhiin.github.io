@@ -1,0 +1,194 @@
+/*  
+ * file: style_main.css
+ * author: Michael Pace
+ * created: 07.14.2025
+ * updated: 07.22.2025
+ */
+
+@import "style_crt.css";
+
+/* 
+ * CSS RESET:
+ *  (sourced from https://piccalil.li/blog/a-more-modern-css-reset/)
+ * ==================================================================
+ * ==================================================================
+ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* ==================================================================
+ * ==================================================================
+ */
+
+/* PALETTE */
+:root {
+    --color-ivory: #FEFFEA;
+    --color-night: #151515;
+    --color-orange-web: #F3A712;
+    --color-hunter-green: #386641;
+    --color-chili-red: #d84727;
+
+    --main-bg-color: var(--color-night);
+    --main-content-color: var(--color-night);
+    --text-content-color: var(--color-ivory);
+    --main-banner-color: var(--color-night);
+    --text-banner-color: var(--color-ivory);
+    --main-highlight-color: var(--color-ivory);
+}
+
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+    background-color: var(--main-bg-color);
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: var(--main-banner-color);
+    color: var(--text-banner-color);
+    filter: drop-shadow(0 0 0.2rem var(--color-ivory));
+}
+header a {
+    text-decoration: none;
+}
+header h1 {
+    margin: auto 0 auto 0;
+}
+header nav {
+    margin: auto 0 auto 0;
+    height: 100%;
+}
+header nav ul {
+    display: inline;
+    height: 100%;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0.2rem;
+}
+header nav ul a {
+    padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+}
+header nav ul a:hover {
+    background-color: var(--main-highlight-color);
+    color: var(--color-night);
+    border-radius: 0.1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--main-banner-color);
+    color: var(--text-banner-color);
+    filter: drop-shadow(0 0 0.3rem var(--color-ivory));
+}
+footer p {
+    margin: auto;
+}
+
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-content-color);
+    color: var(--text-content-color);
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    border-radius: 0.3rem;
+}
+
+

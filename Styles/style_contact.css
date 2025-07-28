@@ -1,0 +1,13 @@
+/* file: style_contact.css
+ * author: Michael Pace
+ * created: 07.21.2025
+ * updated: 07.21.2025
+ */
+
+@import "style_main.css";
+
+#contact-content {
+    padding: 0 1rem 1rem 1rem;
+}
+
+

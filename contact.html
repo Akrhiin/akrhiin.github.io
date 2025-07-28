@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+    file: contact.html
+    author: Michael pace
+    created: 07.14.2025
+    updated: 07.22.2025
+-->
+
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Pace - Portfolio</title>
+    <link rel="stylesheet" href="Styles/style_contact.css">
+</head>
+<body>
+    <div class="crt"></div>
+    <header>
+        <a href="https://linkedin.com/in/michaelpace-ma" target="_blank"><h1>MICHAEL PACE</h1></a>
+        <nav>
+            <ul>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="projects.html"><li>PROJECTS</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2></h2>
+        <div class="content-block" id="contact-content">
+            <div id="contact-info">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:michaelpace.ma@protonmail.com">michaelpace.ma@protonmail.com</a>
+                    </li>
+                    <li>
+                        <strong>Phone:</strong>
+                        <a href="tel:+16175290840">+1 (617) 529-0840</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Michael Pace. All rights reserved.</p>
+    </footer>
+</body>
+</html>
