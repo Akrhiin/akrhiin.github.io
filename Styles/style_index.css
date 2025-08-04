@@ -1,7 +1,7 @@
 /* file: style_index.css
  * author: Michael Pace
  * created: 07.21.2025
- * updated: 07.22.2025
+ * updated: 08.04.2025
  */
 
 @import "style_main.css";
@@ -23,6 +23,14 @@
 #index-content {
     padding-bottom: 2.5rem;
     text-align: center;
+}
+
+#headshot-container {
+    width: 55%;
+    margin: 2rem auto 1rem auto;
+    padding: 1rem;
+    border-top: 0.15rem solid var(--text-content-color);
+    border-bottom: 0.15rem solid var(--text-content-color);
 }
 
 #headshot {

@@ -1,7 +1,7 @@
 /* file: style_contact.css
  * author: Michael Pace
  * created: 07.21.2025
- * updated: 07.21.2025
+ * updated: 08.04.2025
  */
 
 @import "style_main.css";
@@ -10,4 +10,17 @@
     padding: 0 1rem 1rem 1rem;
 }
 
+#contact-list {
+    list-style: none;
+    padding: 1rem 0 0 1rem;
+    border-top: 0.15rem solid var(--text-content-color);
+}
+
+#contact-form {
+    padding: 1rem;
+    border-top: 0.15rem solid var(--text-content-color);
+}
+.form-group {
+    padding: 0.2rem;
+}
 
