@@ -26,18 +26,29 @@
 }
 
 #headshot-container {
-    width: 55%;
-    margin: 2rem auto 1rem auto;
-    padding: 1rem;
+    width: 100%;
+    margin: 1.3rem auto 0 auto;
+    padding-top: 0.8rem;
     border-top: 0.15rem solid var(--text-content-color);
-    border-bottom: 0.15rem solid var(--text-content-color);
 }
 
 #headshot {
     width: 17rem;
     height: 17rem;
     object-fit: cover;
-    margin: 2rem auto 2rem auto;
+    margin: 1.5rem auto 1.5rem auto;
     border-radius: 0.1rem;
 }
 
+#index-content section {
+    margin: 0 auto 1.5rem auto;
+}
+
+#index-content p {
+    margin: 0 auto 0.2rem auto;
+}
+
+#index-description {
+    padding: 1.5rem 1rem 0 1rem;
+    border-top: 0.15rem solid var(--text-content-color);
+}
